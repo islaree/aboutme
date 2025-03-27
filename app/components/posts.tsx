@@ -26,7 +26,7 @@ type Article = {
   publication: null;
 };
 
-const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+const apiUrl = process.env.API_URL;
 
 export const Posts = async () => {
   const res = await fetch(`${apiUrl}/api/posts`);
